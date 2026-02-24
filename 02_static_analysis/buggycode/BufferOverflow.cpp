@@ -36,7 +36,7 @@ void demoBufferOverflowData() {
 	printf("login as: ");
 	fflush(stdout);
 	//gets(userName); // use scanf("%s", userName); if gets fails with identifier not found
-	scanf("%s", userName);
+	fgets(userName, USER_INPUT_MAX_LENGTH, stdin);
 
 	// Get password
 	printf("%s@vulnerable.machine.com: ", userName);
